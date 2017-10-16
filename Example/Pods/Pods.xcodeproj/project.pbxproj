@@ -81,7 +81,7 @@
 		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		47169CC71F950DDA00EF1542 /* BRCountDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BRCountDownView.swift; path = BRCountDownView/Classes/BRCountDownView.swift; sourceTree = "<group>"; };
 		47169CC91F950E1A00EF1542 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		47169CCA1F950E2A00EF1542 /* BRCountDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BRCountDownView.xib; path = ../../../../BRCountDownView/Assets/BRCountDownView.xib; sourceTree = "<group>"; };
+		47169CCA1F950E2A00EF1542 /* BRCountDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BRCountDownView.xib; sourceTree = "<group>"; };
 		472BA42D59076620C0B2B58976035515 /* Pods-BRCountDownView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BRCountDownView_Tests-resources.sh"; sourceTree = "<group>"; };
 		4B3BA67CFF5F9355E5D4468354E21D51 /* Pods-BRCountDownView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BRCountDownView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		520FE233FF63986981C0885EBBD6773F /* BRCountDownView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRCountDownView-umbrella.h"; sourceTree = "<group>"; };
@@ -161,8 +161,6 @@
 		1044C104AF1A056CB3D363ED9019B5E5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				47169CCA1F950E2A00EF1542 /* BRCountDownView.xib */,
-				47169CC91F950E1A00EF1542 /* Media.xcassets */,
 				A1B43BB4545810A852816B1AF9DCDB68 /* BRCountDownView.modulemap */,
 				742CC2902380445B618B8CB30DD90647 /* BRCountDownView.xcconfig */,
 				5992FD69B248B4A0C1AEF4BBBBBC06CF /* BRCountDownView-dummy.m */,
@@ -270,6 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				47169CC71F950DDA00EF1542 /* BRCountDownView.swift */,
+				47169CCA1F950E2A00EF1542 /* BRCountDownView.xib */,
+				47169CC91F950E1A00EF1542 /* Media.xcassets */,
 				1044C104AF1A056CB3D363ED9019B5E5 /* Support Files */,
 			);
 			name = BRCountDownView;
@@ -855,6 +855,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -890,6 +891,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
