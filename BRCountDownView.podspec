@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'BRCountDownView'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of BRCountDownView.'
+s.name             = 'BRCountDownView'
+s.version          = '0.1.0'
+s.summary          = 'BRCountDownView is count-down animated UI Components'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,23 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.description      = "description : BRCountDownView is count-down animated UI Components"
 
-  s.homepage         = 'https://github.com/boraseoksoon@gmail.com/BRCountDownView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'boraseoksoon@gmail.com' => 'boraseoksoon@gmail.com' }
-  s.source           = { :git => 'https://github.com/boraseoksoon@gmail.com/BRCountDownView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.homepage         = 'https://github.com/boraseoksoon/BRCountDownView'
 
-  s.ios.deployment_target = '8.0'
+s.license          = { :type => 'Apache License 2.0', :file => 'LICENSE' }
+s.author           = { 'boraseoksoon@gmail.com' => 'boraseoksoon@gmail.com' }
+s.source           = { :git => 'https://github.com/boraseoksoon/BRCountDownView.git', :tag => s.version.to_s }
 
-  s.source_files = 'BRCountDownView/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'BRCountDownView' => ['BRCountDownView/Assets/*.png']
-  # }
+s.ios.deployment_target = '9.0'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.source_files = 'BRCountDownView/Classes/**/*'
+
+# s.resource_bundles = {
+#  'BRCountDownView' => ['BRCountDownView/Assets/*.png']
+#}
+
+# s.public_header_files = 'Pod/Classes/**/*.h'
+s.frameworks = 'UIKit'
+
 end
