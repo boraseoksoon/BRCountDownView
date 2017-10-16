@@ -17,11 +17,11 @@
 		3390B546DD793FB0545D02E6D51ACC47 /* Pods-BRCountDownView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B57D4A8F5083C3E90E840F3A698784 /* Pods-BRCountDownView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */; };
 		421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		47169CCC1F950E4100EF1542 /* BRCountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47169CC71F950DDA00EF1542 /* BRCountDownView.swift */; };
 		4EDC473587AC2CB1A611D34C687FB564 /* Pods-BRCountDownView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F37243BB6EFAD2DA94EDEBDC0A235 /* Pods-BRCountDownView_Tests-dummy.m */; };
 		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C18C0EB1FED5EB5CE3B0E768AC510F /* FBSnapshotTestCase-dummy.m */; };
 		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */; };
 		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */; };
-		7AEDC2598C4BBD0179DBB8F53618891E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520165598A08CB3543308F0F981E95C0 /* ReplaceMe.swift */; };
 		7D88432037A6919070842BF9695F11DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
 		7E9B14D5F8842A86CA86F2AF45230725 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8F339250A1C3C5C5C5364254007103 /* XCTest.framework */; };
 		841FF232C33C7D49C58CEFDBE7EEB92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA323C90663942983643D7A4D1F697C8 /* UIKit.framework */; };
@@ -79,9 +79,11 @@
 		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		47169CC71F950DDA00EF1542 /* BRCountDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BRCountDownView.swift; path = BRCountDownView/Classes/BRCountDownView.swift; sourceTree = "<group>"; };
+		47169CC91F950E1A00EF1542 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		47169CCA1F950E2A00EF1542 /* BRCountDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BRCountDownView.xib; path = ../../../../BRCountDownView/Assets/BRCountDownView.xib; sourceTree = "<group>"; };
 		472BA42D59076620C0B2B58976035515 /* Pods-BRCountDownView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BRCountDownView_Tests-resources.sh"; sourceTree = "<group>"; };
 		4B3BA67CFF5F9355E5D4468354E21D51 /* Pods-BRCountDownView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BRCountDownView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		520165598A08CB3543308F0F981E95C0 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = BRCountDownView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		520FE233FF63986981C0885EBBD6773F /* BRCountDownView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRCountDownView-umbrella.h"; sourceTree = "<group>"; };
 		52C18C0EB1FED5EB5CE3B0E768AC510F /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
@@ -159,6 +161,8 @@
 		1044C104AF1A056CB3D363ED9019B5E5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				47169CCA1F950E2A00EF1542 /* BRCountDownView.xib */,
+				47169CC91F950E1A00EF1542 /* Media.xcassets */,
 				A1B43BB4545810A852816B1AF9DCDB68 /* BRCountDownView.modulemap */,
 				742CC2902380445B618B8CB30DD90647 /* BRCountDownView.xcconfig */,
 				5992FD69B248B4A0C1AEF4BBBBBC06CF /* BRCountDownView-dummy.m */,
@@ -265,7 +269,7 @@
 		CF326AA49F100C51712B2B2851542737 /* BRCountDownView */ = {
 			isa = PBXGroup;
 			children = (
-				520165598A08CB3543308F0F981E95C0 /* ReplaceMe.swift */,
+				47169CC71F950DDA00EF1542 /* BRCountDownView.swift */,
 				1044C104AF1A056CB3D363ED9019B5E5 /* Support Files */,
 			);
 			name = BRCountDownView;
@@ -460,6 +464,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					43702CF1CACBEBA9F762B2E4967D5765 = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -502,8 +511,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47169CCC1F950E4100EF1542 /* BRCountDownView.swift in Sources */,
 				92B43187F7A36BBB1A5EF283D449BE0C /* BRCountDownView-dummy.m in Sources */,
-				7AEDC2598C4BBD0179DBB8F53618891E /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 742CC2902380445B618B8CB30DD90647 /* BRCountDownView.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -890,6 +900,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 742CC2902380445B618B8CB30DD90647 /* BRCountDownView.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
