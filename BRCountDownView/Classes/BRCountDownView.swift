@@ -272,6 +272,22 @@ extension BRCountDownView {
   private func initPhase(timeSeconds seconds: Int) {
     self.backgroundColor = UIColor.white
     
+    
+    let podBundle = Bundle(for: self.classForCoder)
+    
+    if let bundleURL = podBundle.url(forResource: XIB_CONSTANT_NAME,
+                                     withExtension: "bundle") {
+      if let bundle = Bundle(url: bundleURL) {
+        if let view = bundle.loadNibNamed(XIB_CONSTANT_NAME,
+                                          owner:self,
+                                          options:nil)?[0] as? UIView {
+          self.initUserInteractionUnable()
+          self.initCountdownData(with: seconds)
+          self.initialize(countdownView: view)
+          self.startCountdown()
+        }
+      }
+    }
     let bundle = Bundle(for: BRCountDownView.self)
     if let view = bundle.loadNibNamed(XIB_CONSTANT_NAME,
                                       owner:self,

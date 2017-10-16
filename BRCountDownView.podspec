@@ -29,11 +29,12 @@ s.ios.deployment_target = '9.0'
 
 s.source_files = 'BRCountDownView/Classes/**/*'
 
+s.resources = 'BRCountDownView/Assets/*.{xib, png}'
+
 s.resource_bundles = {
-  'BRCountDownView' => ['BRCountDownView/Assets/*']
+'BRCountDownView' => ['BRCountDownView/Assets/*.{xib, png}']
 }
 
-# s.public_header_files = 'Pod/Classes/**/*.h'
 s.frameworks = 'UIKit'
 
 end

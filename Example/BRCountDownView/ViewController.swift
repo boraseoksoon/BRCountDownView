@@ -7,11 +7,11 @@
 //
 
 import UIKit
-// import BRCountDownView
+import BRCountDownView
 
 class ViewController: UIViewController {
   @IBOutlet var checkTestLabel: UILabel!
-  /*
+
   lazy var countdownView: BRCountDownView = {
     let countdownView = BRCountDownView(timeSeconds: /* 30000 */ 5)
     countdownView.countdownAnimationStyle = .slideInFromBottom
@@ -33,12 +33,12 @@ class ViewController: UIViewController {
     
     return countdownView
   }()
-  */
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     self.view.backgroundColor = UIColor.gray
     checkTestLabel.text = "countdown is doing the job..."
-    /*
+    
     self.view.addSubview(countdownView)
     countdownView.center = CGPoint(x: self.view.frame.size.width  / 2,
                                    y: self.view.frame.size.height / 2)
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     countdownView.addTarget(self,
                             action: #selector(ViewController.countdownClicked(_:)),
                             for: .touchUpInside)
-    */
+ 
   }
 
   override func didReceiveMemoryWarning() {
