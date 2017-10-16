@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BRCountDownView_Example' do
+  pod 'BRCountDownView', :path => '../'
+
+  target 'BRCountDownView_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
