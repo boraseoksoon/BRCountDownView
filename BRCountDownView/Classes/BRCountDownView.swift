@@ -39,9 +39,51 @@ final public class BRCountDownView: UIControl {
   @IBOutlet public var minuteLabel: UILabel!
   @IBOutlet public var secondLabel: UILabel!
   
-  public var countdownAnimationStyle: CountDownDefineAnimation = .slideInFromBottom
+  @IBInspectable
+  public var pressedBackgroundColor: UIColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1) {
+    didSet {
+      backgroundColor = pressedBackgroundColor
+    }
+  }
+  
+  @IBInspectable
+  public var unpressedBackgroundColor: UIColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1) {
+    didSet {
+      backgroundColor = unpressedBackgroundColor
+    }
+  }
+  
+  // MARK: Properties
+  fileprivate var innerTimer = Timer()
+  fileprivate var seconds = 0
+  
+  fileprivate var isTimerRunning = false
+  fileprivate var resumeTapped = false
+  
+  public var pressedAnimationDuration = 1.0
+  public var unpressedAnimationDuration = 1.0
+  
+  public var finished: ((BRCountDownView) -> Void)?
+  public var repeated: ((BRCountDownView) -> Void)?
+  
+  public func repeatCountDown(in seconds: Int) {
+    innerTimer.invalidate()
+    isTimerRunning = false
+    self.resumeTapped = true
+    
+    self.seconds = seconds
+    
+    self.repeated?(self)
+    
+    if isTimerRunning == false {
+      runTimer()
+    }
+  }
+  
+  public var animationStyle: CountDownDefineAnimation = .slideInFromBottom
   
   public lazy var animateCountDown = {
+    // given animation implemented.
     (target: UIView, duration: TimeInterval) in
     // Create a CATransition animation
     let slideUpFromBottomTransition = CATransition()
@@ -58,44 +100,7 @@ final public class BRCountDownView: UIControl {
     target.layer.add(slideUpFromBottomTransition,
                      forKey: "slideInFromBottomTransition")
   }
-  
-  // MARK: Properties
-  public var finished: ((BRCountDownView) -> Void)?
-  public var repeated: ((BRCountDownView) -> Void)?
-  
-  public func repeatCountDown(with seconds: Int) {
-    innerTimer.invalidate()
-    isTimerRunning = false
-    self.resumeTapped = true
-    
-    self.seconds = seconds
-    
-    self.repeated?(self)
-    
-    if isTimerRunning == false {
-      runTimer()
-    }
-  }
-  
-  fileprivate var innerTimer = Timer()
-  fileprivate var seconds = 0
-  
-  fileprivate var isTimerRunning = false
-  fileprivate var resumeTapped = false
-  
-  public var pressedAnimationDuration = 1.0
-  public var unpressedAnimationDuration = 1.0
-  /// public
-  @IBInspectable
-  public var pressedBackgroundColor: UIColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-  
-  @IBInspectable
-  public var unpressedBackgroundColor: UIColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1) {
-    didSet {
-      backgroundColor = unpressedBackgroundColor
-    }
-  }
-  
+
   // MARK: UIControl LifeCycle APIs
   public required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
@@ -109,6 +114,28 @@ final public class BRCountDownView: UIControl {
   public required init(timeSeconds seconds: Int) {
     super.init(frame:CGRect(x: 0, y: 0, width: 1, height: 1))
     initPhase(timeSeconds: seconds)
+  }
+  
+  public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesBegan(touches, with: event)
+    animate(isPressed: true)
+    
+    if #available(iOS 10.0, *) {
+      let feedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
+      feedbackGenerator.impactOccurred()
+    } else {
+      // Fallback on earlier versions
+    }
+  }
+  
+  public override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesCancelled(touches, with: event)
+    animate(isPressed: false)
+  }
+  
+  public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesEnded(touches, with: event)
+    animate(isPressed: false)
   }
 }
 
@@ -128,28 +155,6 @@ public extension BRCountDownView {
       )
       layer.borderWidth = newValue
     }
-  }
-  
-  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    super.touchesBegan(touches, with: event)
-    animate(isPressed: true)
-    
-    if #available(iOS 10.0, *) {
-      let feedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
-      feedbackGenerator.impactOccurred()
-    } else {
-      // Fallback on earlier versions
-    }
-  }
-  
-  override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-    super.touchesCancelled(touches, with: event)
-    animate(isPressed: false)
-  }
-  
-  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-    super.touchesEnded(touches, with: event)
-    animate(isPressed: false)
   }
   
   // MARK: private
@@ -213,7 +218,7 @@ extension BRCountDownView {
         hourLabel.text = hourString
         if Int(minuteString)! == 59 {
           if Int(secondString)! == 59 {
-            switch self.countdownAnimationStyle {
+            switch self.animationStyle {
             case .slideInFromBottom:
               hourLabel.animateSlideInFromBottom(1.0)
             case .slideInFromLeft:
@@ -228,7 +233,7 @@ extension BRCountDownView {
       if let minuteLabel = minuteLabel {
         minuteLabel.text = minuteString
         if Int(secondString)! == 59 {
-          switch self.countdownAnimationStyle {
+          switch self.animationStyle {
           case .slideInFromBottom:
             minuteLabel.animateSlideInFromBottom(1.0)
           case .slideInFromLeft:
@@ -242,7 +247,7 @@ extension BRCountDownView {
       if let secondLabel = secondLabel {
         if Int(secondString)! >= 0 {
           secondLabel.text = secondString
-          switch self.countdownAnimationStyle {
+          switch self.animationStyle {
           case .slideInFromBottom:
             secondLabel.animateSlideInFromBottom(1.0)
           case .slideInFromLeft:
@@ -350,7 +355,7 @@ extension BRCountDownView {
   }
 }
 
-// MARK: Animations API
+// MARK: UIView Animations extension API
 extension UIView {
   // Name this function in a way that makes sense to you...
   // slideFromLeft, slideRight, slideLeftToRight, etc. are great alternative names.

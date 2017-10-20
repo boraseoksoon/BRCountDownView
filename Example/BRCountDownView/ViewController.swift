@@ -14,21 +14,28 @@ class ViewController: UIViewController {
 
   lazy var countdownView: BRCountDownView = {
     let countdownView = BRCountDownView(timeSeconds: /* 30000 */ 5)
-    countdownView.countdownAnimationStyle = .slideInFromBottom
+    countdownView.animationStyle = .slideInFromBottom
+    
+    countdownView.isUserInteractionEnabled = true
+    for subview in countdownView.subviews {
+      subview.isUserInteractionEnabled = true
+    }
     
     countdownView.finished = {
       [unowned self] (countdownView) -> Void in
       
-      print("countdown finished!")
-      self.countdownView.repeatCountDown(with: 5)
-      self.checkTestLabel.text = "countdown is finished..."
+      DispatchQueue.main.async {
+        self.checkTestLabel.text = "countdown is finished..."
+      }
+      self.countdownView.repeatCountDown(in: 5)
     }
     
     countdownView.repeated = {
       [unowned self] (countdownView) -> Void in
       
-      print("countdown repeated!")
-      self.checkTestLabel.text = "countdown is repeated..."
+      DispatchQueue.main.async {
+        self.checkTestLabel.text = "countdown is repeated..."
+      }
     }
     
     return countdownView
