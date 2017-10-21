@@ -15,6 +15,9 @@
 		2EF5581875BCF5BE42CAE5323244F14D /* Pods-BRCountDownView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F37243BB6EFAD2DA94EDEBDC0A235 /* Pods-BRCountDownView_Tests-dummy.m */; };
 		35BB3E9A77B6D0E613DE9724C698BC9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		42FE7E1867688FC6D8D06C91C34489FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		478AE6151F9B567F00AAEB99 /* timeDash.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E9FB9C1F952A230015F447 /* timeDash.png */; };
+		478AE6161F9B567F00AAEB99 /* timeDash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E9FB9A1F952A230015F447 /* timeDash@2x.png */; };
+		478AE6171F9B567F00AAEB99 /* timeDash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E9FB9B1F952A230015F447 /* timeDash@3x.png */; };
 		4F1867E19A26AD14255ABE91C2910514 /* BRCountDownView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C683B155AB70113930D54CA14AA6E167 /* BRCountDownView-dummy.m */; };
 		6D5F43FFCAFF60EC1DC5F0A56D196C61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		7D88432037A6919070842BF9695F11DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
@@ -392,6 +395,9 @@
 			files = (
 				FAA4C0E1AF55D4C0435D850D485339C2 /* BRCountDownView.bundle in Resources */,
 				EE1FB06125420D04A13ED68BFED29D44 /* BRCountDownView.xib in Resources */,
+				478AE6151F9B567F00AAEB99 /* timeDash.png in Resources */,
+				478AE6161F9B567F00AAEB99 /* timeDash@2x.png in Resources */,
+				478AE6171F9B567F00AAEB99 /* timeDash@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

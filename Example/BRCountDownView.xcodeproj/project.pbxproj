@@ -32,6 +32,7 @@
 		474B072A1F950B9A004F4257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		474B072B1F950B9A004F4257 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		474B072C1F950B9A004F4257 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		478AE6141F9B53FB00AAEB99 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5744F4C71B7C9CA340C3B31C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BRCountDownView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRCountDownView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8C5EF95441159B5FB73518CC /* Pods-BRCountDownView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRCountDownView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BRCountDownView_Example/Pods-BRCountDownView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		90E8543D24C769DDC10ECF08 /* BRCountDownView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BRCountDownView.podspec; path = ../BRCountDownView.podspec; sourceTree = "<group>"; };
-		A09B2A0082B35F89E7F7789F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B140D0AC7A4F1D12793F4FE6 /* Pods-BRCountDownView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRCountDownView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BRCountDownView_Tests/Pods-BRCountDownView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B968E19A2C84AC970DD9CF7E /* Pods_BRCountDownView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRCountDownView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FB46280230492312DE69C7 /* Pods-BRCountDownView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRCountDownView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BRCountDownView_Example/Pods-BRCountDownView_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				90E8543D24C769DDC10ECF08 /* BRCountDownView.podspec */,
-				A09B2A0082B35F89E7F7789F /* README.md */,
+				478AE6141F9B53FB00AAEB99 /* README.md */,
 				5744F4C71B7C9CA340C3B31C /* LICENSE */,
 			);
 			name = "Podspec Metadata";

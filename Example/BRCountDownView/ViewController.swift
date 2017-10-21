@@ -107,10 +107,11 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.view.backgroundColor = UIColor.gray
     checkTestLabel.text = "countdown is doing the job..."
     
     self.view.addSubview(countdownView)
+    
+    // get center.
     countdownView.center = CGPoint(x: self.view.frame.size.width  / 2,
                                    y: self.view.frame.size.height / 2)
   }
