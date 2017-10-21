@@ -15,12 +15,7 @@ class ViewController: UIViewController {
   lazy var countdownView: BRCountDownView = {
     let countdownView = BRCountDownView(timeSeconds: /* 30000 */ 5)
     countdownView.animationStyle = .slideInFromBottom
-    
-    countdownView.isUserInteractionEnabled = true
-    for subview in countdownView.subviews {
-      subview.isUserInteractionEnabled = true
-    }
-    
+
     countdownView.finished = {
       [unowned self] (countdownView) -> Void in
       
@@ -38,6 +33,17 @@ class ViewController: UIViewController {
       }
     }
     
+    countdownView.isUserInteractionEnabled = true
+    countdownView.didTouchBegin = {
+      [unowned self] sender in
+      print("didTouchBegin!?")
+    }
+    
+    countdownView.didTouchEnd = {
+      [unowned self] sender in
+      print("didTouchEnd!?")
+    }
+    
     return countdownView
   }()
   
@@ -51,9 +57,8 @@ class ViewController: UIViewController {
                                    y: self.view.frame.size.height / 2)
 
     countdownView.addTarget(self,
-                            action: #selector(ViewController.countdownClicked(_:)),
+                            action: #selector(countdownClicked(_:)),
                             for: .touchUpInside)
- 
   }
 
   override func didReceiveMemoryWarning() {

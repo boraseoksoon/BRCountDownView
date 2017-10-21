@@ -65,6 +65,8 @@ final public class BRCountDownView: UIControl {
   
   public var finished: ((BRCountDownView) -> Void)?
   public var repeated: ((BRCountDownView) -> Void)?
+  public var didTouchBegin: ((BRCountDownView) -> Void)?
+  public var didTouchEnd: ((BRCountDownView) -> Void)?
   
   public func repeatCountDown(in seconds: Int) {
     innerTimer.invalidate()
@@ -119,13 +121,14 @@ final public class BRCountDownView: UIControl {
   public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     super.touchesBegan(touches, with: event)
     animate(isPressed: true)
-    
+
     if #available(iOS 10.0, *) {
       let feedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
       feedbackGenerator.impactOccurred()
     } else {
       // Fallback on earlier versions
     }
+    self.didTouchBegin!(self)
   }
   
   public override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -136,6 +139,8 @@ final public class BRCountDownView: UIControl {
   public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     super.touchesEnded(touches, with: event)
     animate(isPressed: false)
+    
+    self.didTouchEnd!(self)
   }
 }
 
@@ -187,8 +192,6 @@ public extension BRCountDownView {
       self.backgroundColor = UIColor.clear
     })
   }
-
-  
 }
 
 // MARK: functions API
