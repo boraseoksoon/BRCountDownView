@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -53,18 +52,9 @@
                                     <action selector="resume:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oOh-l3-ucf"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZ0-LQ-nlu" customClass="BRCountDownView" customModule="BRCountDownView">
-                                <rect key="frame" x="93" y="30" width="189" height="74"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="189" id="9Y6-Y8-M3W"/>
-                                    <constraint firstAttribute="height" constant="74" id="jQx-Hs-urA"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pZ0-LQ-nlu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="56s-aA-kze"/>
                             <constraint firstItem="GNe-ir-84t" firstAttribute="centerX" secondItem="RY9-wI-tId" secondAttribute="centerX" id="8G9-Gf-CZH"/>
                             <constraint firstItem="d55-fl-td1" firstAttribute="centerX" secondItem="GNe-ir-84t" secondAttribute="centerX" id="9yf-ub-yXA"/>
                             <constraint firstItem="sf5-rN-5VB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jdf-pT-5jr"/>
@@ -75,7 +65,6 @@
                             <constraint firstItem="F0N-Xo-BvI" firstAttribute="centerX" secondItem="d55-fl-td1" secondAttribute="centerX" id="QUl-vW-C5i"/>
                             <constraint firstItem="F0N-Xo-BvI" firstAttribute="top" secondItem="d55-fl-td1" secondAttribute="bottom" constant="10" id="gYY-RO-0SS"/>
                             <constraint firstItem="sf5-rN-5VB" firstAttribute="top" secondItem="RY9-wI-tId" secondAttribute="bottom" constant="8" id="hvU-7P-obd"/>
-                            <constraint firstItem="pZ0-LQ-nlu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="rET-4s-aed"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -111,6 +111,9 @@ class ViewController: UIViewController {
     
     self.view.addSubview(countdownView)
     
+    countdownView.layer.borderWidth = 1.0
+    countdownView.layer.borderColor = UIColor.red.cgColor
+    
     // get center.
     countdownView.center = CGPoint(x: self.view.frame.size.width  / 2,
                                    y: self.view.frame.size.height / 2)

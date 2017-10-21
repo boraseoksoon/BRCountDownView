@@ -8,6 +8,7 @@
 <b>BORING</b> Countdown animated - customizable UI Components. <br>
 <br>
 <img src="https://media.giphy.com/media/l1J9RPCxBxqvXw4xy/giphy.gif" width=240>
+<img src="https://media.giphy.com/media/xT9IgrNdWNLdHIkM7e/giphy.gif" width=240>
 <br>
 
 This is customizable UI-View components to countdown given seconds with countdown animations.<br>
