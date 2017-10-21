@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'BRCountDownView'
-s.version          = '0.1.9'
+s.version          = '0.2.1'
 s.summary          = 'BRCountDownView is count-down animated UI Components'
 
 s.description      = "description : BRCountDownView is count-down animated UI Components"
