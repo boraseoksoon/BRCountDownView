@@ -7,106 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01714277ADA9D03E4BE71B11F87EE34E /* BRCountDownView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCB1B539CFC869A0B8EA36CDBD7C47D /* BRCountDownView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0869A9F5632B6A6FC7203CF77D11D7FE /* Pods-BRCountDownView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B57D4A8F5083C3E90E840F3A698784 /* Pods-BRCountDownView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A36FCC0F7DD9DCB2BCD44AD1797A0B8 /* Pods-BRCountDownView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97DC623040979AF30A8533562B0EDF0E /* Pods-BRCountDownView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184CB1913B84983300D675847A4FF7D7 /* Pods-BRCountDownView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD65B61DBE4BB658D1FB9E288079E00 /* Pods-BRCountDownView_Example-dummy.m */; };
-		2A98DF56D69C9F5BBD4F637A39C5129D /* BRCountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3B44C2C16804C32F26E2F08929E64 /* BRCountDownView.swift */; };
+		24CCFBE70BBC9716519F977185DE8AF6 /* timeDash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FD1756314AFAB3A92A1AB2DDC8EB2C /* timeDash@2x.png */; };
 		2EF5581875BCF5BE42CAE5323244F14D /* Pods-BRCountDownView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F37243BB6EFAD2DA94EDEBDC0A235 /* Pods-BRCountDownView_Tests-dummy.m */; };
 		35BB3E9A77B6D0E613DE9724C698BC9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		42FE7E1867688FC6D8D06C91C34489FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		478AE6151F9B567F00AAEB99 /* timeDash.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E9FB9C1F952A230015F447 /* timeDash.png */; };
-		478AE6161F9B567F00AAEB99 /* timeDash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E9FB9A1F952A230015F447 /* timeDash@2x.png */; };
-		478AE6171F9B567F00AAEB99 /* timeDash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E9FB9B1F952A230015F447 /* timeDash@3x.png */; };
-		4F1867E19A26AD14255ABE91C2910514 /* BRCountDownView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C683B155AB70113930D54CA14AA6E167 /* BRCountDownView-dummy.m */; };
-		6D5F43FFCAFF60EC1DC5F0A56D196C61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		6BE1CD3B050B739C970F2949C1086DD1 /* BRCountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603F9EEB279271FE12346E969989EDA9 /* BRCountDownView.swift */; };
+		700E10FF4A6776D6A99B7158D4176FF7 /* BRCountDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB9A919B66D2D3AE88E34078E7FF03E /* BRCountDownView.xib */; };
 		7D88432037A6919070842BF9695F11DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		EB803209341591EDC33A0DA8CED4DCD1 /* BRCountDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90D68EB4FE8EB77C285EB48F8972C286 /* BRCountDownView.xib */; };
-		EE1FB06125420D04A13ED68BFED29D44 /* BRCountDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90D68EB4FE8EB77C285EB48F8972C286 /* BRCountDownView.xib */; };
-		FAA4C0E1AF55D4C0435D850D485339C2 /* BRCountDownView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32A0A94DCBBF7E5E3B6523B5B97E4A22 /* BRCountDownView.bundle */; };
+		912FF0418094965B86329FAE19087F02 /* BRCountDownView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DCB41E503E07B2EB8F4DA9D84274AFA /* BRCountDownView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE0A58C4C0B132292B31917A676794AE /* BRCountDownView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E9A219C962876160DD2B4691ECF23 /* BRCountDownView-dummy.m */; };
+		BEC41D0A8B4BFFDAE4F85E16AE2C05D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		DBDA5F01E0B59AB90AF195C65D3E94B6 /* timeDash.png in Resources */ = {isa = PBXBuildFile; fileRef = 657E576D90F5DC05654C333624ADDED0 /* timeDash.png */; };
+		DCD34E9E00AB90F0ACBD8C741D724F4D /* timeDash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 827BE5EF25CFF4A2466F0BB208460238 /* timeDash@3x.png */; };
+		FFD18BDA1D191166B90D1891D0DDC2A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4BFD8F526E05305F9AE8D18112084859 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AEFEDD2D45E6329DAE5EC56F16F8BF8B;
-			remoteInfo = "BRCountDownView-BRCountDownView";
-		};
 		B4EB957F9DDD9DE81CA6980F4327AADB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 79B68DEF4CD777172768A795DE03EA5B;
+			remoteGlobalIDString = 099A3CF30A964B9D7AF5D678CBEF123C;
 			remoteInfo = BRCountDownView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		08DB853CEED9757B24CB22E49704A6E4 /* Pods-BRCountDownView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BRCountDownView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0B2139C1CD05E6C0CF6CCE057CBD512B /* Pods-BRCountDownView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BRCountDownView_Example.modulemap"; sourceTree = "<group>"; };
-		1507B9BB78611187C9FAED3239B0B481 /* ResourceBundle-BRCountDownView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BRCountDownView-Info.plist"; sourceTree = "<group>"; };
+		0B2139C1CD05E6C0CF6CCE057CBD512B /* Pods-BRCountDownView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BRCountDownView_Example.modulemap"; sourceTree = "<group>"; };
 		164E5394FF074824A4C326C99D426A5E /* Pods-BRCountDownView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BRCountDownView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1FE8B76F4B8E2EFF75853094E47F2659 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23FDF9E9681C4D9BAF25C00E340FBFD6 /* BRCountDownView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRCountDownView-prefix.pch"; sourceTree = "<group>"; };
 		2458705A50CFEA95AB3892B53A4119D6 /* Pods-BRCountDownView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BRCountDownView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A0381A6E8D2A920582B9627BE5CE257 /* BRCountDownView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BRCountDownView.xcconfig; sourceTree = "<group>"; };
 		2DE241771665D6E75E98C9DCEF34ADF4 /* Pods-BRCountDownView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BRCountDownView_Example-resources.sh"; sourceTree = "<group>"; };
-		32A0A94DCBBF7E5E3B6523B5B97E4A22 /* BRCountDownView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRCountDownView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		330BE6A36C68EBE63C26EFF9A7E91B03 /* Pods-BRCountDownView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BRCountDownView_Tests.modulemap"; sourceTree = "<group>"; };
-		46DAA0A48F41EEC0B8315ED383F7F218 /* BRCountDownView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BRCountDownView.modulemap; sourceTree = "<group>"; };
+		330BE6A36C68EBE63C26EFF9A7E91B03 /* Pods-BRCountDownView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BRCountDownView_Tests.modulemap"; sourceTree = "<group>"; };
+		3ADA274564A74A5F5147C275DDB5412F /* Pods_BRCountDownView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BRCountDownView_Example.framework; path = "Pods-BRCountDownView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB9A919B66D2D3AE88E34078E7FF03E /* BRCountDownView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = BRCountDownView.xib; path = BRCountDownView/Assets/BRCountDownView.xib; sourceTree = "<group>"; };
 		472BA42D59076620C0B2B58976035515 /* Pods-BRCountDownView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BRCountDownView_Tests-resources.sh"; sourceTree = "<group>"; };
-		47E9FB9A1F952A230015F447 /* timeDash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "timeDash@2x.png"; path = "BRCountDownView/Assets/timeDash@2x.png"; sourceTree = "<group>"; };
-		47E9FB9B1F952A230015F447 /* timeDash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "timeDash@3x.png"; path = "BRCountDownView/Assets/timeDash@3x.png"; sourceTree = "<group>"; };
-		47E9FB9C1F952A230015F447 /* timeDash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timeDash.png; path = BRCountDownView/Assets/timeDash.png; sourceTree = "<group>"; };
 		4B3BA67CFF5F9355E5D4468354E21D51 /* Pods-BRCountDownView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BRCountDownView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5A327F270DB9667354F0692CBF67106B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DD3B44C2C16804C32F26E2F08929E64 /* BRCountDownView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BRCountDownView.swift; path = BRCountDownView/Classes/BRCountDownView.swift; sourceTree = "<group>"; };
+		5B1E9A219C962876160DD2B4691ECF23 /* BRCountDownView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BRCountDownView-dummy.m"; sourceTree = "<group>"; };
+		5DCB41E503E07B2EB8F4DA9D84274AFA /* BRCountDownView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRCountDownView-umbrella.h"; sourceTree = "<group>"; };
+		603F9EEB279271FE12346E969989EDA9 /* BRCountDownView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BRCountDownView.swift; path = BRCountDownView/Classes/BRCountDownView.swift; sourceTree = "<group>"; };
+		657E576D90F5DC05654C333624ADDED0 /* timeDash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = timeDash.png; path = BRCountDownView/Assets/timeDash.png; sourceTree = "<group>"; };
 		67FF5E59CAAC17A20AC56A30B3BFE287 /* Pods-BRCountDownView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BRCountDownView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7FCB1B539CFC869A0B8EA36CDBD7C47D /* BRCountDownView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRCountDownView-umbrella.h"; sourceTree = "<group>"; };
+		68FD1756314AFAB3A92A1AB2DDC8EB2C /* timeDash@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "timeDash@2x.png"; path = "BRCountDownView/Assets/timeDash@2x.png"; sourceTree = "<group>"; };
 		809EF8348B9FEFAD327DBDF0A5D2D0CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		843AF12B5623175F05440EE48D5CA7C4 /* Pods_BRCountDownView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRCountDownView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		899B22806E7FFA10499F3B62073EC3A6 /* BRCountDownView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRCountDownView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90D68EB4FE8EB77C285EB48F8972C286 /* BRCountDownView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = BRCountDownView.xib; path = BRCountDownView/Assets/BRCountDownView.xib; sourceTree = "<group>"; };
+		827BE5EF25CFF4A2466F0BB208460238 /* timeDash@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "timeDash@3x.png"; path = "BRCountDownView/Assets/timeDash@3x.png"; sourceTree = "<group>"; };
+		845F3620C1DD91715591CDFDC114AFD6 /* Pods_BRCountDownView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BRCountDownView_Tests.framework; path = "Pods-BRCountDownView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0326EE61D147781BFD1F8C0956DC1B /* BRCountDownView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BRCountDownView.framework; path = BRCountDownView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B57D4A8F5083C3E90E840F3A698784 /* Pods-BRCountDownView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BRCountDownView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97DC623040979AF30A8533562B0EDF0E /* Pods-BRCountDownView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BRCountDownView_Example-umbrella.h"; sourceTree = "<group>"; };
+		9DE7B4BE0A7B478E9D1028884C25FB8D /* BRCountDownView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BRCountDownView.modulemap; sourceTree = "<group>"; };
 		A367D24219E4DCF8DAE3DCA30EFAE841 /* Pods-BRCountDownView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BRCountDownView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A9EFDE8A15ADA383DE2CDD26EC33D003 /* BRCountDownView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRCountDownView-prefix.pch"; sourceTree = "<group>"; };
 		AAD146BC0769F36641C87C06708DDCF0 /* Pods-BRCountDownView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BRCountDownView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AB3FB71FB443DF25464735C1986BA00F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1D2BA4149F5248859E7B74F408897FC /* Pods-BRCountDownView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BRCountDownView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C683B155AB70113930D54CA14AA6E167 /* BRCountDownView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BRCountDownView-dummy.m"; sourceTree = "<group>"; };
-		CFA8C00CB459E03E7C4E8A98DD5AE13D /* Pods_BRCountDownView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRCountDownView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DA2F37243BB6EFAD2DA94EDEBDC0A235 /* Pods-BRCountDownView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BRCountDownView_Tests-dummy.m"; sourceTree = "<group>"; };
 		EA78A4D3C2646685198FEA01BF1B221B /* Pods-BRCountDownView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BRCountDownView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F149DA2D132ED2171F638EEF8A1423EC /* BRCountDownView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BRCountDownView.xcconfig; sourceTree = "<group>"; };
 		F897CC5B275006ACCBFA249EE925C0D3 /* Pods-BRCountDownView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BRCountDownView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FAD65B61DBE4BB658D1FB9E288079E00 /* Pods-BRCountDownView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BRCountDownView_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3D82A50C12A6F8417B9AD56938A0B679 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6B1F335E2C50E293FD3A38A8B8A4EC3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7D88432037A6919070842BF9695F11DE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B2811B6C32696DB02E32ED08A90EE83F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D5F43FFCAFF60EC1DC5F0A56D196C61 /* Foundation.framework in Frameworks */,
-				42FE7E1867688FC6D8D06C91C34489FF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,31 +91,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C984DC7C9513784B821FCD2EEDFF7D99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC41D0A8B4BFFDAE4F85E16AE2C05D3 /* Foundation.framework in Frameworks */,
+				FFD18BDA1D191166B90D1891D0DDC2A7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08EC2F06115BBBBC0174E4968C212E40 /* Support Files */ = {
+		0CDFA5A1C40E0A78540CCD54F371BFDE /* BRCountDownView */ = {
 			isa = PBXGroup;
 			children = (
-				46DAA0A48F41EEC0B8315ED383F7F218 /* BRCountDownView.modulemap */,
-				F149DA2D132ED2171F638EEF8A1423EC /* BRCountDownView.xcconfig */,
-				C683B155AB70113930D54CA14AA6E167 /* BRCountDownView-dummy.m */,
-				23FDF9E9681C4D9BAF25C00E340FBFD6 /* BRCountDownView-prefix.pch */,
-				7FCB1B539CFC869A0B8EA36CDBD7C47D /* BRCountDownView-umbrella.h */,
-				5A327F270DB9667354F0692CBF67106B /* Info.plist */,
-				1507B9BB78611187C9FAED3239B0B481 /* ResourceBundle-BRCountDownView-Info.plist */,
+				603F9EEB279271FE12346E969989EDA9 /* BRCountDownView.swift */,
+				B2E8884C621C9518F9B8A6C554D958F6 /* Resources */,
+				49B84A3C1DA730602FC3008FC6B5887A /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BRCountDownView";
+			name = BRCountDownView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		41C043F05055EA273FFFA1FA0BE617A3 /* Products */ = {
+		2C1B71279D6D84166062BB0E5482A432 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32A0A94DCBBF7E5E3B6523B5B97E4A22 /* BRCountDownView.bundle */,
-				899B22806E7FFA10499F3B62073EC3A6 /* BRCountDownView.framework */,
-				843AF12B5623175F05440EE48D5CA7C4 /* Pods_BRCountDownView_Example.framework */,
-				CFA8C00CB459E03E7C4E8A98DD5AE13D /* Pods_BRCountDownView_Tests.framework */,
+				8F0326EE61D147781BFD1F8C0956DC1B /* BRCountDownView.framework */,
+				3ADA274564A74A5F5147C275DDB5412F /* Pods_BRCountDownView_Example.framework */,
+				845F3620C1DD91715591CDFDC114AFD6 /* Pods_BRCountDownView_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,15 +141,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		599D9B5B20C41D3B9544E3AFA6FFB034 /* BRCountDownView */ = {
+		49B84A3C1DA730602FC3008FC6B5887A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5DD3B44C2C16804C32F26E2F08929E64 /* BRCountDownView.swift */,
-				91CBE6316F7DD1AB290746D053287925 /* Resources */,
-				08EC2F06115BBBBC0174E4968C212E40 /* Support Files */,
+				9DE7B4BE0A7B478E9D1028884C25FB8D /* BRCountDownView.modulemap */,
+				2A0381A6E8D2A920582B9627BE5CE257 /* BRCountDownView.xcconfig */,
+				5B1E9A219C962876160DD2B4691ECF23 /* BRCountDownView-dummy.m */,
+				A9EFDE8A15ADA383DE2CDD26EC33D003 /* BRCountDownView-prefix.pch */,
+				5DCB41E503E07B2EB8F4DA9D84274AFA /* BRCountDownView-umbrella.h */,
+				AB3FB71FB443DF25464735C1986BA00F /* Info.plist */,
 			);
-			name = BRCountDownView;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BRCountDownView";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -181,18 +161,18 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				DA66BB4218F9B99D8E247363646E5DC9 /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				41C043F05055EA273FFFA1FA0BE617A3 /* Products */,
+				2C1B71279D6D84166062BB0E5482A432 /* Products */,
 				CCD8C2BD7CD8C8C005F5C21E090ADAC8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		91CBE6316F7DD1AB290746D053287925 /* Resources */ = {
+		B2E8884C621C9518F9B8A6C554D958F6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				90D68EB4FE8EB77C285EB48F8972C286 /* BRCountDownView.xib */,
-				47E9FB9C1F952A230015F447 /* timeDash.png */,
-				47E9FB9A1F952A230015F447 /* timeDash@2x.png */,
-				47E9FB9B1F952A230015F447 /* timeDash@3x.png */,
+				3CB9A919B66D2D3AE88E34078E7FF03E /* BRCountDownView.xib */,
+				657E576D90F5DC05654C333624ADDED0 /* timeDash.png */,
+				68FD1756314AFAB3A92A1AB2DDC8EB2C /* timeDash@2x.png */,
+				827BE5EF25CFF4A2466F0BB208460238 /* timeDash@3x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -209,7 +189,7 @@
 		DA66BB4218F9B99D8E247363646E5DC9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				599D9B5B20C41D3B9544E3AFA6FFB034 /* BRCountDownView */,
+				0CDFA5A1C40E0A78540CCD54F371BFDE /* BRCountDownView */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -253,6 +233,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		5F6AE0A29BAF29E277AE64109E226A67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912FF0418094965B86329FAE19087F02 /* BRCountDownView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6636586B3AD4D95045037CFB6A5FACD2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,17 +257,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E829419D949BC6D1E628E7F5E1DBCFA1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				01714277ADA9D03E4BE71B11F87EE34E /* BRCountDownView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		099A3CF30A964B9D7AF5D678CBEF123C /* BRCountDownView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA24964E329280C20CC74263E1932DA /* Build configuration list for PBXNativeTarget "BRCountDownView" */;
+			buildPhases = (
+				FED730CD7483D1F3F3A399D4B1325EBB /* Sources */,
+				C984DC7C9513784B821FCD2EEDFF7D99 /* Frameworks */,
+				C461C8EBE62A7786DB6D072743DE1347 /* Resources */,
+				5F6AE0A29BAF29E277AE64109E226A67 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BRCountDownView;
+			productName = BRCountDownView;
+			productReference = 8F0326EE61D147781BFD1F8C0956DC1B /* BRCountDownView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		53BA87445D209EE6C8B769C3707F6185 /* Pods-BRCountDownView_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACA1A5BC0B7BCD3C6452ADE54237F57C /* Build configuration list for PBXNativeTarget "Pods-BRCountDownView_Example" */;
@@ -295,26 +293,7 @@
 			);
 			name = "Pods-BRCountDownView_Example";
 			productName = "Pods-BRCountDownView_Example";
-			productReference = 843AF12B5623175F05440EE48D5CA7C4 /* Pods_BRCountDownView_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		79B68DEF4CD777172768A795DE03EA5B /* BRCountDownView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EDEB2FA92E79920FDEB206C32D0868AC /* Build configuration list for PBXNativeTarget "BRCountDownView" */;
-			buildPhases = (
-				963213C09AE716CDC7C1A2F66F335846 /* Sources */,
-				B2811B6C32696DB02E32ED08A90EE83F /* Frameworks */,
-				8E522901D72ABC42077CEFCE8EE76132 /* Resources */,
-				E829419D949BC6D1E628E7F5E1DBCFA1 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				46DB0D2D345C47D11787DA29F22D10F1 /* PBXTargetDependency */,
-			);
-			name = BRCountDownView;
-			productName = BRCountDownView;
-			productReference = 899B22806E7FFA10499F3B62073EC3A6 /* BRCountDownView.framework */;
+			productReference = 3ADA274564A74A5F5147C275DDB5412F /* Pods_BRCountDownView_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A20E5F60CA4FC550CAE36DE0AE87DD19 /* Pods-BRCountDownView_Tests */ = {
@@ -331,25 +310,8 @@
 			);
 			name = "Pods-BRCountDownView_Tests";
 			productName = "Pods-BRCountDownView_Tests";
-			productReference = CFA8C00CB459E03E7C4E8A98DD5AE13D /* Pods_BRCountDownView_Tests.framework */;
+			productReference = 845F3620C1DD91715591CDFDC114AFD6 /* Pods_BRCountDownView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		AEFEDD2D45E6329DAE5EC56F16F8BF8B /* BRCountDownView-BRCountDownView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 141E7205341E9C6B7DCD8B19B2CE6FDE /* Build configuration list for PBXNativeTarget "BRCountDownView-BRCountDownView" */;
-			buildPhases = (
-				364E6A89E09D2584E033078ACAB42149 /* Sources */,
-				3D82A50C12A6F8417B9AD56938A0B679 /* Frameworks */,
-				111715C9003AE8511B663717816F6B6A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "BRCountDownView-BRCountDownView";
-			productName = "BRCountDownView-BRCountDownView";
-			productReference = 32A0A94DCBBF7E5E3B6523B5B97E4A22 /* BRCountDownView.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -368,12 +330,11 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 41C043F05055EA273FFFA1FA0BE617A3 /* Products */;
+			productRefGroup = 2C1B71279D6D84166062BB0E5482A432 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79B68DEF4CD777172768A795DE03EA5B /* BRCountDownView */,
-				AEFEDD2D45E6329DAE5EC56F16F8BF8B /* BRCountDownView-BRCountDownView */,
+				099A3CF30A964B9D7AF5D678CBEF123C /* BRCountDownView */,
 				53BA87445D209EE6C8B769C3707F6185 /* Pods-BRCountDownView_Example */,
 				A20E5F60CA4FC550CAE36DE0AE87DD19 /* Pods-BRCountDownView_Tests */,
 			);
@@ -381,23 +342,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		111715C9003AE8511B663717816F6B6A /* Resources */ = {
+		C461C8EBE62A7786DB6D072743DE1347 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB803209341591EDC33A0DA8CED4DCD1 /* BRCountDownView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E522901D72ABC42077CEFCE8EE76132 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAA4C0E1AF55D4C0435D850D485339C2 /* BRCountDownView.bundle in Resources */,
-				EE1FB06125420D04A13ED68BFED29D44 /* BRCountDownView.xib in Resources */,
-				478AE6151F9B567F00AAEB99 /* timeDash.png in Resources */,
-				478AE6161F9B567F00AAEB99 /* timeDash@2x.png in Resources */,
-				478AE6171F9B567F00AAEB99 /* timeDash@3x.png in Resources */,
+				700E10FF4A6776D6A99B7158D4176FF7 /* BRCountDownView.xib in Resources */,
+				DBDA5F01E0B59AB90AF195C65D3E94B6 /* timeDash.png in Resources */,
+				24CCFBE70BBC9716519F977185DE8AF6 /* timeDash@2x.png in Resources */,
+				DCD34E9E00AB90F0ACBD8C741D724F4D /* timeDash@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,13 +364,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		364E6A89E09D2584E033078ACAB42149 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		90A89165A56EC7CB6808AFD05F34196D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,33 +372,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		963213C09AE716CDC7C1A2F66F335846 /* Sources */ = {
+		FED730CD7483D1F3F3A399D4B1325EBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F1867E19A26AD14255ABE91C2910514 /* BRCountDownView-dummy.m in Sources */,
-				2A98DF56D69C9F5BBD4F637A39C5129D /* BRCountDownView.swift in Sources */,
+				AE0A58C4C0B132292B31917A676794AE /* BRCountDownView-dummy.m in Sources */,
+				6BE1CD3B050B739C970F2949C1086DD1 /* BRCountDownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		46DB0D2D345C47D11787DA29F22D10F1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "BRCountDownView-BRCountDownView";
-			target = AEFEDD2D45E6329DAE5EC56F16F8BF8B /* BRCountDownView-BRCountDownView */;
-			targetProxy = 4BFD8F526E05305F9AE8D18112084859 /* PBXContainerItemProxy */;
-		};
 		706C7E7C0C2B96EDF385502BF068BDC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BRCountDownView;
-			target = 79B68DEF4CD777172768A795DE03EA5B /* BRCountDownView */;
+			target = 099A3CF30A964B9D7AF5D678CBEF123C /* BRCountDownView */;
 			targetProxy = B4EB957F9DDD9DE81CA6980F4327AADB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		010D8282166F4755649411F31A0C9782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A0381A6E8D2A920582B9627BE5CE257 /* BRCountDownView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BRCountDownView/BRCountDownView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BRCountDownView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BRCountDownView/BRCountDownView.modulemap";
+				PRODUCT_NAME = BRCountDownView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1ACF01825149EA475CFC27E1326F7240 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 08DB853CEED9757B24CB22E49704A6E4 /* Pods-BRCountDownView_Example.debug.xcconfig */;
@@ -488,38 +459,6 @@
 			};
 			name = Debug;
 		};
-		259BC2FDD65B612C3B8E261255693DC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F149DA2D132ED2171F638EEF8A1423EC /* BRCountDownView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BRCountDownView/BRCountDownView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BRCountDownView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BRCountDownView/BRCountDownView.modulemap";
-				PRODUCT_NAME = BRCountDownView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		499A4CA2F677B68E328DBCAA7C0B3B45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AAD146BC0769F36641C87C06708DDCF0 /* Pods-BRCountDownView_Tests.release.xcconfig */;
@@ -553,37 +492,36 @@
 			};
 			name = Release;
 		};
-		5D9453FF2AAB9ED46415E8BC3B379C5E /* Debug */ = {
+		4C4E38CBF1D43E7660A4623C30F7EB57 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F149DA2D132ED2171F638EEF8A1423EC /* BRCountDownView.xcconfig */;
+			baseConfigurationReference = 2A0381A6E8D2A920582B9627BE5CE257 /* BRCountDownView.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BRCountDownView";
-				INFOPLIST_FILE = "Target Support Files/BRCountDownView/ResourceBundle-BRCountDownView-Info.plist";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BRCountDownView/BRCountDownView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BRCountDownView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BRCountDownView/BRCountDownView.modulemap";
 				PRODUCT_NAME = BRCountDownView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		625830F4345AF821C3A0DDE939F184D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F149DA2D132ED2171F638EEF8A1423EC /* BRCountDownView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BRCountDownView";
-				INFOPLIST_FILE = "Target Support Files/BRCountDownView/ResourceBundle-BRCountDownView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = BRCountDownView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
 		};
 		6F9224530522DD3C735EC96CF142642E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -639,37 +577,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		7A501CC50BAF4C672F0AE5B03C6B5031 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F149DA2D132ED2171F638EEF8A1423EC /* BRCountDownView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BRCountDownView/BRCountDownView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BRCountDownView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BRCountDownView/BRCountDownView.modulemap";
-				PRODUCT_NAME = BRCountDownView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		A22A8B29D35C2F0CC21871AA26C0382B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -800,11 +707,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		141E7205341E9C6B7DCD8B19B2CE6FDE /* Build configuration list for PBXNativeTarget "BRCountDownView-BRCountDownView" */ = {
+		2CA24964E329280C20CC74263E1932DA /* Build configuration list for PBXNativeTarget "BRCountDownView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D9453FF2AAB9ED46415E8BC3B379C5E /* Debug */,
-				625830F4345AF821C3A0DDE939F184D7 /* Release */,
+				4C4E38CBF1D43E7660A4623C30F7EB57 /* Debug */,
+				010D8282166F4755649411F31A0C9782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -832,15 +739,6 @@
 			buildConfigurations = (
 				EE26C0B46D4D8F873A493166B7FEDF68 /* Debug */,
 				499A4CA2F677B68E328DBCAA7C0B3B45 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EDEB2FA92E79920FDEB206C32D0868AC /* Build configuration list for PBXNativeTarget "BRCountDownView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7A501CC50BAF4C672F0AE5B03C6B5031 /* Debug */,
-				259BC2FDD65B612C3B8E261255693DC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

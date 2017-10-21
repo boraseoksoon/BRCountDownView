@@ -15,11 +15,7 @@ s.ios.deployment_target = '9.0'
 
 s.source_files = 'BRCountDownView/Classes/**/*'
 
-s.resources = 'BRCountDownView/Assets/*.{xib, png}'
-
-s.resource_bundles = {
-'BRCountDownView' => ['BRCountDownView/Assets/*.{xib, png}']
-}
+s.resources = "BRCountDownView/Assets/*"
 
 s.frameworks = 'UIKit'
 

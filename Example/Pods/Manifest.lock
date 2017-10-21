@@ -1,5 +1,5 @@
 PODS:
-  - BRCountDownView (0.1.2)
+  - BRCountDownView (0.1.9)
 
 DEPENDENCIES:
   - BRCountDownView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BRCountDownView: a266e0741e293cdea2af8dae9c5f34cc78328762
+  BRCountDownView: 18e0397d5cc22d69dff69ce92467b4ed751ba94b
 
 PODFILE CHECKSUM: ee70c4fb27a1400ef4086d4f6eb97b546beea836
 
