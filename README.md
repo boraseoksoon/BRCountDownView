@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/BRDropDownView.svg?style=flat)](http://cocoapods.org/pods/BRDropDownView)
 [![Platform](https://img.shields.io/cocoapods/p/BRCountDownView.svg?style=flat)](http://cocoapods.org/pods/BRCountDownView)
 
-<b>BORING</b> Countdown animated - customizable UI Components by <b> boraseoksoon </b>. <br>
+<b>BORING</b> Countdown animated - customizable UI Components. <br>
 <br>
 <img src="https://media.giphy.com/media/l1J9RPCxBxqvXw4xy/giphy.gif" width=240>
 <br>
@@ -67,57 +67,60 @@ lazy var countdownView: BRCountDownView = {
   //    }
 
   countdownView.didFinish = {
-  [unowned self] (countdownView) -> Void in
+    [unowned self] (countdownView) -> Void in
 
-  DispatchQueue.main.async {
-  self.checkTestLabel.text = "countdown is finished..."
-  }
+    DispatchQueue.main.async {
+      self.checkTestLabel.text = "countdown is finished..."
+    }
 
-  /** you can again repeat countdown with seconds you want whenever you want. */
-  // self.countdownView.repeatCountDown(in: 5)
+    /** you can again repeat countdown with seconds you want whenever you want. */
+    // self.countdownView.repeatCountDown(in: 5)
   }
 
   countdownView.didRepeat = {
-  [unowned self] (countdownView) -> Void in
-  // it is fired when count-down repeat gets started.
-  DispatchQueue.main.async {
-  self.checkTestLabel.text = "countdown is repeated..."
-  }
+    [unowned self] (countdownView) -> Void in
+    
+    // it is fired when count-down repeat gets started.
+    DispatchQueue.main.async {
+      self.checkTestLabel.text = "countdown is repeated..."
+    }
   }
 
   countdownView.didResume = {
-  [unowned self] (countdownView) -> Void in
-  /**
-  do any task here if you need.
-  */
-  print("didResume!")
+    [unowned self] (countdownView) -> Void in
+    /**
+      do any task here if you need.
+    */
+    print("didResume!")
   }
 
   countdownView.didTerminate = {
-  [unowned self] (countdownView) -> Void in
-  /**
-  do any task here if you need.
-  */
-  print("didTerminate!")
+    [unowned self] (countdownView) -> Void in
+    /**
+      do any task here if you need.
+    */
+    print("didTerminate!")
   }
 
   countdownView.didStop = {
-  [unowned self] (countdownView) -> Void in
-  /**
-  do any task here if you need.
-  */
-  print("didStop!")
+    [unowned self] (countdownView) -> Void in
+    /**
+      do any task here if you need.
+    */
+    print("didStop!")
   }
 
   countdownView.isUserInteractionEnabled = true
   countdownView.didTouchBegin = {
-  [unowned self] sender in
-  print("didTouchBegin!?")
+    [unowned self] sender in
+    
+    print("didTouchBegin!?")
   }
 
   countdownView.didTouchEnd = {
-  [unowned self] sender in
-  print("didTouchEnd!?")
+    [unowned self] sender in
+    
+    print("didTouchEnd!?")
   }
 
   return countdownView
