@@ -54,7 +54,7 @@ final public class BRCountDownView: UIControl {
   }
   
   @IBInspectable
-  var borderWidth: CGFloat {
+  public var widthOfBorder: CGFloat {
     get {
       return layer.borderWidth
     }
@@ -68,7 +68,7 @@ final public class BRCountDownView: UIControl {
       layer.borderWidth = newValue
     }
   }
-
+  
   // MARK: Properties
   fileprivate var innerTimer = Timer()
   fileprivate var seconds = 0
@@ -93,18 +93,18 @@ final public class BRCountDownView: UIControl {
     (target: UIView, duration: TimeInterval) in
     
     let slideUpFromBottomTransition = CATransition()
-
+    
     slideUpFromBottomTransition.type = kCATransitionPush
     slideUpFromBottomTransition.subtype = kCATransitionFromTop
     slideUpFromBottomTransition.duration = duration
     slideUpFromBottomTransition.timingFunction =
       CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
     slideUpFromBottomTransition.fillMode = kCAFillModeRemoved
-
+    
     target.layer.add(slideUpFromBottomTransition,
                      forKey: "slideInFromBottomTransition")
   }
-
+  
   // MARK: UIControl LifeCycle APIs
   public required init?(coder: NSCoder) {
     // fatalError("init(coder:) has not been implemented")
@@ -125,7 +125,7 @@ final public class BRCountDownView: UIControl {
   public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     super.touchesBegan(touches, with: event)
     animate(isPressed: true)
-
+    
     if #available(iOS 10.0, *) {
       let feedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
       feedbackGenerator.impactOccurred()
@@ -150,6 +150,10 @@ final public class BRCountDownView: UIControl {
 
 public extension BRCountDownView {
   // MARK: public methods
+  public func set(seconds: Int) -> Void {
+    self.seconds = seconds
+  }
+  
   public func terminate() -> Void {
     if self.seconds > 0 {
       self.resume()
@@ -202,7 +206,7 @@ public extension BRCountDownView {
 // MARK: private methods.
 extension BRCountDownView {
   // MARK: private
-  private func animate(isPressed: Bool) {
+  fileprivate func animate(isPressed: Bool) {
     let (
     duration,
       backgroundColor,
@@ -232,7 +236,7 @@ extension BRCountDownView {
     })
   }
   
-  private func runTimer() {
+  fileprivate func runTimer() {
     innerTimer = Timer.scheduledTimer(timeInterval: 1,
                                       target: self,
                                       selector: (#selector(self.updateTimer)),
@@ -241,7 +245,7 @@ extension BRCountDownView {
     isTimerRunning = true
   }
   
-  @objc private func updateTimer() {
+  @objc fileprivate func updateTimer() {
     if seconds < 1 {
       innerTimer.invalidate()
       self.resumeTapped = true
@@ -319,7 +323,7 @@ extension BRCountDownView {
     return (hourString, minuteString, secondString)
   }
   
-  private func initPhase(timeSeconds seconds: Int) {
+  fileprivate func initPhase(timeSeconds seconds: Int) {
     self.backgroundColor = UIColor.white
     
     
@@ -398,13 +402,13 @@ extension BRCountDownView {
 // MARK: UIView instance Methods for built-in countdown animation.
 extension UIView {
   func animateSlideInFromBottom(_ duration: TimeInterval = 1.0,
-                         completionDelegate: CAAnimationDelegate? = nil) {
+                                completionDelegate: CAAnimationDelegate? = nil) {
     let slideUpFromBottomTransition = CATransition()
     
     if let delegate: CAAnimationDelegate = completionDelegate {
       slideUpFromBottomTransition.delegate = delegate
     }
-
+    
     slideUpFromBottomTransition.type = kCATransitionPush
     slideUpFromBottomTransition.subtype = kCATransitionFromTop
     slideUpFromBottomTransition.duration = duration
@@ -417,7 +421,7 @@ extension UIView {
   }
   
   func animateSlideInFromLeft(_ duration: TimeInterval = 1.0,
-                       completionDelegate: CAAnimationDelegate? = nil) {
+                              completionDelegate: CAAnimationDelegate? = nil) {
     let slideInFromLeftTransition = CATransition()
     
     if let delegate: CAAnimationDelegate = completionDelegate {
@@ -429,7 +433,7 @@ extension UIView {
     slideInFromLeftTransition.duration = duration
     slideInFromLeftTransition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
     slideInFromLeftTransition.fillMode = kCAFillModeRemoved
-
+    
     self.layer.add(slideInFromLeftTransition,
                    forKey: "slideInFromLeftTransition")
   }
