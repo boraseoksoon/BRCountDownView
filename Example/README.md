@@ -7,7 +7,7 @@
 
 <b>BORING</b> Countdown animated - customizable UI Components by <b> boraseoksoon </b>. <br>
 <br>
-<img src="http://www.giphy.com/gifs/3o7aDeUMHBhsruFTig" width=240>
+<img src="https://media.giphy.com/media/l1J9RPCxBxqvXw4xy/giphy.gif" width=480>
 <br>
 
 This is customizable UI-View components to countdown given seconds with countdown animations.<br>
@@ -34,7 +34,9 @@ pod 'BRCountDownView'
 ## How to use
 Since this is straightforwardly simple to use, you can get how to use BRCountDownView by chekcing ViewController.swift in example project.<br>
 
-Step 1. create BRCountDownView programmatically or via storyboard or xib.<br>
+<b>Step 1. create BRCountDownView programmatically or via storyboard or xib.</b>
+<br>
+
 By doing so, You can not only create BRCountDown instance, but also customize properties including countdown animation on your own way.<br>
 Check sample code below.<br>
 * be careful that BRCountDownView is only supported for fixed size until now.<br>
@@ -122,7 +124,8 @@ lazy var countdownView: BRCountDownView = {
 }()
 ```
 
-step2. add BRCountDownView instance that programmatically created on a view hierachy that you need.<br>
+<b>Step2. add BRCountDownView instance that programmatically created on a view hierachy that you need.</b>
+<br>
 
 ```Swift
 override func viewDidLoad() {
