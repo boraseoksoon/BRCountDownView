@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BRCountDownView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BRCountDownView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,11 +24,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RY9-wI-tId">
+                                <rect key="frame" x="163" y="598" width="49" height="30"/>
+                                <state key="normal" title="Repeat"/>
+                                <connections>
+                                    <action selector="repeatAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kVU-Ya-hTr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNe-ir-84t">
+                                <rect key="frame" x="154" y="568" width="66" height="30"/>
+                                <state key="normal" title="terminate"/>
+                                <connections>
+                                    <action selector="terminate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="coA-EL-dhv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0N-Xo-BvI">
+                                <rect key="frame" x="172" y="528" width="31" height="30"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jei-DW-TdG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d55-fl-td1">
+                                <rect key="frame" x="162" y="488" width="51" height="30"/>
+                                <state key="normal" title="resume"/>
+                                <connections>
+                                    <action selector="resume:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oOh-l3-ucf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="GNe-ir-84t" firstAttribute="centerX" secondItem="RY9-wI-tId" secondAttribute="centerX" id="8G9-Gf-CZH"/>
+                            <constraint firstItem="d55-fl-td1" firstAttribute="centerX" secondItem="GNe-ir-84t" secondAttribute="centerX" id="9yf-ub-yXA"/>
                             <constraint firstItem="sf5-rN-5VB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jdf-pT-5jr"/>
+                            <constraint firstItem="RY9-wI-tId" firstAttribute="top" secondItem="GNe-ir-84t" secondAttribute="bottom" id="Jm4-6P-h1O"/>
+                            <constraint firstItem="RY9-wI-tId" firstAttribute="centerX" secondItem="sf5-rN-5VB" secondAttribute="centerX" id="LZm-ze-7O7"/>
+                            <constraint firstItem="GNe-ir-84t" firstAttribute="top" secondItem="F0N-Xo-BvI" secondAttribute="bottom" constant="10" id="M4f-bC-eLR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sf5-rN-5VB" secondAttribute="bottom" constant="10" id="OlX-yn-tYs"/>
+                            <constraint firstItem="F0N-Xo-BvI" firstAttribute="centerX" secondItem="d55-fl-td1" secondAttribute="centerX" id="QUl-vW-C5i"/>
+                            <constraint firstItem="F0N-Xo-BvI" firstAttribute="top" secondItem="d55-fl-td1" secondAttribute="bottom" constant="10" id="gYY-RO-0SS"/>
+                            <constraint firstItem="sf5-rN-5VB" firstAttribute="top" secondItem="RY9-wI-tId" secondAttribute="bottom" constant="8" id="hvU-7P-obd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
