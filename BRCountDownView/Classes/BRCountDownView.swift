@@ -35,9 +35,9 @@ public enum CountDownDefineAnimation {
 @IBDesignable
 final public class BRCountDownView: UIControl {
   // MARK: IBOutlets, IBActions
-  @IBOutlet public var hourLabel: UILabel!
-  @IBOutlet public var minuteLabel: UILabel!
-  @IBOutlet public var secondLabel: UILabel!
+  @IBOutlet fileprivate var hourLabel: UILabel!
+  @IBOutlet fileprivate var minuteLabel: UILabel!
+  @IBOutlet fileprivate var secondLabel: UILabel!
   
   @IBInspectable
   public var pressedBackgroundColor: UIColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1) {
@@ -107,7 +107,9 @@ final public class BRCountDownView: UIControl {
 
   // MARK: UIControl LifeCycle APIs
   public required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
+    // fatalError("init(coder:) has not been implemented")
+    super.init(coder: coder)
+    initPhase(timeSeconds: seconds)
   }
   
   override private init(frame: CGRect) {
