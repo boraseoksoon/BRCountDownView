@@ -36,14 +36,14 @@
 
 /* Begin PBXFileReference section */
 		08DB853CEED9757B24CB22E49704A6E4 /* Pods-BRCountDownView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BRCountDownView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0B2139C1CD05E6C0CF6CCE057CBD512B /* Pods-BRCountDownView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BRCountDownView_Example.modulemap"; sourceTree = "<group>"; };
+		0B2139C1CD05E6C0CF6CCE057CBD512B /* Pods-BRCountDownView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BRCountDownView_Example.modulemap"; sourceTree = "<group>"; };
 		164E5394FF074824A4C326C99D426A5E /* Pods-BRCountDownView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BRCountDownView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1FE8B76F4B8E2EFF75853094E47F2659 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2458705A50CFEA95AB3892B53A4119D6 /* Pods-BRCountDownView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BRCountDownView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2A0381A6E8D2A920582B9627BE5CE257 /* BRCountDownView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BRCountDownView.xcconfig; sourceTree = "<group>"; };
 		2DE241771665D6E75E98C9DCEF34ADF4 /* Pods-BRCountDownView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BRCountDownView_Example-resources.sh"; sourceTree = "<group>"; };
-		330BE6A36C68EBE63C26EFF9A7E91B03 /* Pods-BRCountDownView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BRCountDownView_Tests.modulemap"; sourceTree = "<group>"; };
-		3ADA274564A74A5F5147C275DDB5412F /* Pods_BRCountDownView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BRCountDownView_Example.framework; path = "Pods-BRCountDownView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		330BE6A36C68EBE63C26EFF9A7E91B03 /* Pods-BRCountDownView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BRCountDownView_Tests.modulemap"; sourceTree = "<group>"; };
+		3ADA274564A74A5F5147C275DDB5412F /* Pods_BRCountDownView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRCountDownView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB9A919B66D2D3AE88E34078E7FF03E /* BRCountDownView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = BRCountDownView.xib; path = BRCountDownView/Assets/BRCountDownView.xib; sourceTree = "<group>"; };
 		472BA42D59076620C0B2B58976035515 /* Pods-BRCountDownView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BRCountDownView_Tests-resources.sh"; sourceTree = "<group>"; };
 		4B3BA67CFF5F9355E5D4468354E21D51 /* Pods-BRCountDownView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BRCountDownView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -55,12 +55,12 @@
 		68FD1756314AFAB3A92A1AB2DDC8EB2C /* timeDash@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "timeDash@2x.png"; path = "BRCountDownView/Assets/timeDash@2x.png"; sourceTree = "<group>"; };
 		809EF8348B9FEFAD327DBDF0A5D2D0CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		827BE5EF25CFF4A2466F0BB208460238 /* timeDash@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "timeDash@3x.png"; path = "BRCountDownView/Assets/timeDash@3x.png"; sourceTree = "<group>"; };
-		845F3620C1DD91715591CDFDC114AFD6 /* Pods_BRCountDownView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BRCountDownView_Tests.framework; path = "Pods-BRCountDownView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F0326EE61D147781BFD1F8C0956DC1B /* BRCountDownView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BRCountDownView.framework; path = BRCountDownView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		845F3620C1DD91715591CDFDC114AFD6 /* Pods_BRCountDownView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRCountDownView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0326EE61D147781BFD1F8C0956DC1B /* BRCountDownView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRCountDownView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B57D4A8F5083C3E90E840F3A698784 /* Pods-BRCountDownView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BRCountDownView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97DC623040979AF30A8533562B0EDF0E /* Pods-BRCountDownView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BRCountDownView_Example-umbrella.h"; sourceTree = "<group>"; };
-		9DE7B4BE0A7B478E9D1028884C25FB8D /* BRCountDownView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BRCountDownView.modulemap; sourceTree = "<group>"; };
+		9DE7B4BE0A7B478E9D1028884C25FB8D /* BRCountDownView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BRCountDownView.modulemap; sourceTree = "<group>"; };
 		A367D24219E4DCF8DAE3DCA30EFAE841 /* Pods-BRCountDownView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BRCountDownView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A9EFDE8A15ADA383DE2CDD26EC33D003 /* BRCountDownView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRCountDownView-prefix.pch"; sourceTree = "<group>"; };
 		AAD146BC0769F36641C87C06708DDCF0 /* Pods-BRCountDownView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BRCountDownView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -327,6 +327,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -417,7 +418,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -516,7 +517,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

@@ -94,12 +94,12 @@ final public class BRCountDownView: UIControl {
     
     let slideUpFromBottomTransition = CATransition()
     
-    slideUpFromBottomTransition.type = kCATransitionPush
-    slideUpFromBottomTransition.subtype = kCATransitionFromTop
+    slideUpFromBottomTransition.type = CATransitionType.push
+    slideUpFromBottomTransition.subtype = CATransitionSubtype.fromTop
     slideUpFromBottomTransition.duration = duration
     slideUpFromBottomTransition.timingFunction =
-      CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-    slideUpFromBottomTransition.fillMode = kCAFillModeRemoved
+        CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+    slideUpFromBottomTransition.fillMode = CAMediaTimingFillMode.removed
     
     target.layer.add(slideUpFromBottomTransition,
                      forKey: "slideInFromBottomTransition")
@@ -409,12 +409,12 @@ extension UIView {
       slideUpFromBottomTransition.delegate = delegate
     }
     
-    slideUpFromBottomTransition.type = kCATransitionPush
-    slideUpFromBottomTransition.subtype = kCATransitionFromTop
+    slideUpFromBottomTransition.type = CATransitionType.push
+    slideUpFromBottomTransition.subtype = CATransitionSubtype.fromTop
     slideUpFromBottomTransition.duration = duration
     slideUpFromBottomTransition.timingFunction =
-      CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-    slideUpFromBottomTransition.fillMode = kCAFillModeRemoved
+        CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+    slideUpFromBottomTransition.fillMode = CAMediaTimingFillMode.removed
     
     layer.add(slideUpFromBottomTransition,
               forKey: "slideInFromBottomTransition")
@@ -428,11 +428,11 @@ extension UIView {
       slideInFromLeftTransition.delegate = delegate
     }
     
-    slideInFromLeftTransition.type = kCATransitionPush
-    slideInFromLeftTransition.subtype = kCATransitionFromLeft
+    slideInFromLeftTransition.type = CATransitionType.push
+    slideInFromLeftTransition.subtype = CATransitionSubtype.fromLeft
     slideInFromLeftTransition.duration = duration
-    slideInFromLeftTransition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-    slideInFromLeftTransition.fillMode = kCAFillModeRemoved
+    slideInFromLeftTransition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+    slideInFromLeftTransition.fillMode = CAMediaTimingFillMode.removed
     
     self.layer.add(slideInFromLeftTransition,
                    forKey: "slideInFromLeftTransition")
